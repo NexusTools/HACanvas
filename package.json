@@ -1,0 +1,64 @@
+{
+  "name": "hacanvas",
+  "version": "1.0.0-beta.1",
+  "description": "Hybrid Raster + Vector Art Engine, .hacanvas ZIP+XML Package Format, GIMP/PSD/XCF/ORA/SVG/Image Importers, Shared Object Library & Built-in Multi-Provider AI Tooling",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    },
+    "./zip-xml-package": {
+      "types": "./dist/zip-xml-package.d.ts",
+      "default": "./dist/zip-xml-package.js"
+    },
+    "./format-importers": {
+      "types": "./dist/format-importers.d.ts",
+      "default": "./dist/format-importers.js"
+    },
+    "./hybrid-art-engine": {
+      "types": "./dist/hybrid-art-engine.d.ts",
+      "default": "./dist/hybrid-art-engine.js"
+    },
+    "./shared-object-library": {
+      "types": "./dist/shared-object-library.d.ts",
+      "default": "./dist/shared-object-library.js"
+    },
+    "./ai/abstract-ai-tool": {
+      "types": "./dist/ai/abstract-ai-tool.d.ts",
+      "default": "./dist/ai/abstract-ai-tool.js"
+    },
+    "./ai/lm-studio-client": {
+      "types": "./dist/ai/lm-studio-client.d.ts",
+      "default": "./dist/ai/lm-studio-client.js"
+    }
+  },
+  "files": [
+    "dist",
+    "src",
+    "docs",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "prepublishOnly": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NexusTools/HACanvas.git"
+  },
+  "publishConfig": {
+    "access": "public",
+    "tag": "beta"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@nexustools/aitooling": "^1.0.0-beta.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.7.0"
+  }
+}
