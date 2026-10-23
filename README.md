@@ -146,7 +146,7 @@ import {
     HaCanvasAiSession,
     HaCanvasAiToolRegistry,
     LmStudioAiClient
-} from "hacanvas";
+} from "@nexustools/hacanvas";
 
 // 1. Create an AI session backed by HybridArtEngine
 const aiSession = new HaCanvasAiSession(process.cwd(), {

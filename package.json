@@ -1,5 +1,5 @@
 {
-  "name": "hacanvas",
+  "name": "@nexustools/hacanvas",
   "version": "1.0.0-beta.1",
   "description": "Hybrid Raster + Vector Art Engine, .hacanvas ZIP+XML Package Format, GIMP/PSD/XCF/ORA/SVG/Image Importers, Shared Object Library & Built-in Multi-Provider AI Tooling",
   "type": "module",
