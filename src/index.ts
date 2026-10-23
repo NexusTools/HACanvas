@@ -2,6 +2,7 @@ export * from "./zip-xml-package.js";
 export * from "./format-importers.js";
 export * from "./hybrid-art-engine.js";
 export * from "./shared-object-library.js";
+export * from "./filters/gimp-filter-presets.js";
 export * from "./filters/abstract-raster-filter.js";
 export * from "./codecs/abstract-codec.js";
 export * from "./storage/abstract-json-store.js";
